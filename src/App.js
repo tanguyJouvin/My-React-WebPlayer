@@ -6,7 +6,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      url: '',
+      url: 'https://www.youtube.com/watch?v=hHW1oY26kxQ',
       playing: false,
       volume: 0.5,
       duration: 0,
@@ -59,7 +59,8 @@ class App extends Component {
             url={this.state.url} 
           />
         </div>
-        <input type="text" placeholder="enter an url video" value={this.state.url} onChange={this.handleUrl}/><br/>
+        <input type="text" placeholder="enter an url video" value={this.state.url} onChange={this.handleUrl}/>
+        If you want, you can change the video, type a new url<br/>
         <button
           className="btn-floating btn-large orange darken-4 pulse"
           onClick={this.togglePlaying}>{this.state.playing ? "Stop" : "Start"}
